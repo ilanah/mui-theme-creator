@@ -98,3 +98,133 @@ export const themeConfig: ThemeOptions = {
 }
 
 export default createTheme(themeConfig)
+
+import { ThemeOptions as ThemeOptions2} from '@mui/material/styles';
+
+export const themeOptions: ThemeOptions2 = {
+  palette: {
+    mode: 'dark',
+    primary: {
+      main: '#5091cd',
+    },
+    secondary: {
+      main: '#03cdce',
+    },
+    error: {
+      main: '#ff6666',
+    },
+    warning: {
+      main: '#ffdf4c',
+    },
+    success: {
+      main: '#00b050',
+    },
+    info: {
+      main: '#d8dce3',
+    },
+  },
+  shape: {
+    borderRadius: 4,
+  },
+  spacing: 8,
+  overrides: {
+    MuiAppBar: {
+      colorInherit: {
+        backgroundColor: '#689f38',
+        color: '#fff',
+      },
+    },
+  },
+  props: {
+    MuiAppBar: {
+      color: 'inherit',
+    },
+    MuiList: {
+      dense: true,
+    },
+    MuiMenuItem: {
+      dense: true,
+    },
+    MuiTable: {
+      size: 'small',
+    },
+    MuiButton: {
+      size: 'small',
+    },
+    MuiButtonGroup: {
+      size: 'small',
+    },
+    MuiCheckbox: {
+      size: 'small',
+    },
+    MuiFab: {
+      size: 'small',
+    },
+    MuiFormControl: {
+      margin: 'dense',
+      size: 'small',
+    },
+    MuiFormHelperText: {
+      margin: 'dense',
+    },
+    MuiIconButton: {
+      size: 'small',
+    },
+    MuiInputBase: {
+      margin: 'dense',
+    },
+    MuiInputLabel: {
+      margin: 'dense',
+    },
+    MuiRadio: {
+      size: 'small',
+    },
+    MuiSwitch: {
+      size: 'small',
+    },
+    MuiTextField: {
+      margin: 'dense',
+      size: 'small',
+    },
+    MuiTooltip: {
+      arrow: true,
+    },
+  },
+  typography: {
+    fontSize: 18,
+    fontFamily: 'Assistant',
+    htmlFontSize: 18,
+    fontWeightBold: 900,
+    fontWeightMedium: 700,
+    h1: {
+      fontSize: '5rem',
+      fontWeight: 300,
+    },
+    h2: {
+      fontSize: '4rem',
+    },
+    h3: {
+      fontSize: '3.3rem',
+    },
+    h4: {
+      fontSize: '2.6rem',
+    },
+    h5: {
+      fontSize: '2rem',
+    },
+    h6: {
+      fontSize: '1.6rem',
+    },
+    subtitle1: {
+      fontSize: '1.3rem',
+    },
+    subtitle2: {
+      fontSize: '1.1rem',
+    },
+    body1: {
+      fontSize: '1rem',
+    },
+  },
+};
+
+// export default createTheme(themeOptions)
